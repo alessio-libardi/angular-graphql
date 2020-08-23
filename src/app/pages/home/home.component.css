@@ -1,0 +1,15 @@
+.title {
+  margin-top: 5em;
+  text-align: center;
+
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 1em;
+  text-align: center;
+
+  font-size: large;
+  font-weight: 500;
+}

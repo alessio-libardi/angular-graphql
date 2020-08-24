@@ -18,12 +18,19 @@ export class UpdateUserByIdGQL extends Mutation {
         mutation updateUserById($id: ID!, $input: UpdateUserInput!) {
             updateUser(id: $id, input: $input) {
                 id,
-                name
+                name,
+                username,
+                email,
+                phone,
+                website
             }
         }
     `;
 
-    update(id: string, input: UserInput) {
+    update(id: string, input: any) {
+        delete input.id;
+        delete input.__typename;
+
         return this.mutate({ id, input })
     }
 }

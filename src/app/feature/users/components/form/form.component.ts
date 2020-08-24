@@ -64,7 +64,10 @@ import { User } from 'src/app/data-access/users/read-user-by-id.service';
   
     submit(form: FormGroup) {
       if (form.valid) {
-        const entity = form.value
+        const entity = {
+          ...this.entity,
+          ...form.value
+        }
   
         this.submitted.emit(entity);
       }

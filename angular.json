@@ -104,6 +104,10 @@
           "options": {
             "browserTarget": "angular-graphql:build"
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

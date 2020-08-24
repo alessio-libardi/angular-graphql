@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-graphql-df58b": {
+      "hosting": {
+        "angular-graphql": [
+          "angular-graphql-df58b"
+        ]
+      }
+    }
+  }
+}

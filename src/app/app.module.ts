@@ -5,10 +5,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./view/app.component";
 
-import { CoreModule } from "./modules/core.module";
-import { SharedModule } from "./modules/shared.module";
-import { UiAppModule } from "./modules/ui-app.module";
-import { UiMaterialModule } from "./modules/ui-material.module";
+import { UtilCoreModule } from "./util/core/util-core.module";
+import { UtilSharedModule } from "./util/shared/util-shared.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,14 +14,11 @@ import { UiMaterialModule } from "./modules/ui-material.module";
     BrowserModule,
     BrowserAnimationsModule,
 
-    CoreModule,
-    SharedModule,
-    UiAppModule,
-    UiMaterialModule,
+    UtilCoreModule,
+    UtilSharedModule,
 
     AppRoutingModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

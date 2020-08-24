@@ -1,0 +1,17 @@
+<div fxLayout="column" fxLayoutGap="1em">
+    <h1>User detail</h1>
+
+    <div fxLayout="row" fxLayoutAlign="end">
+        <button mat-button (click)="back()">Back</button>
+    </div>
+
+    <mat-card>
+        <mat-card-content>
+            <lbl-app-feature-users-form [entity]="entity$ | async" [submit$]="submit$" (submitted)="save($event)">
+            </lbl-app-feature-users-form>
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-button color="primary" (click)="save()">Save</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

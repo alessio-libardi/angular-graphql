@@ -1,27 +1,26 @@
 <form [formGroup]="form" (ngSubmit)="submit(form)">
-    <div fxLayout="row" fxLayoutGap="1em">
-        <mat-form-field>
+    <div fxLayout="row wrap" fxLayoutGap="1em">
+        <mat-form-field fxFlex="100" fxFlex.gt-sm="nogrow">
             <mat-label>Name</mat-label>
             <input matInput formControlName="name">
         </mat-form-field>
 
-
-        <mat-form-field>
+        <mat-form-field fxFlex="100" fxFlex.gt-sm="nogrow">
             <mat-label>Username</mat-label>
             <input matInput formControlName="username">
         </mat-form-field>
-    </div>
 
-    <div fxLayout="row" fxLayoutGap="1em">
-        <mat-form-field>
+        <div fxHide fxShow.gt-sm fxFlex="100"></div>
+
+        <mat-form-field fxFlex="100" fxFlex.gt-sm="nogrow">
             <mat-label>Email</mat-label>
             <input matInput type="emai" formControlName="email">
         </mat-form-field>
-        <mat-form-field>
+        <mat-form-field fxFlex="100" fxFlex.gt-sm="nogrow">
             <mat-label>Phone</mat-label>
             <input matInput type="tel" formControlName="phone">
         </mat-form-field>
-        <mat-form-field>
+        <mat-form-field fxFlex="100" fxFlex.gt-sm="nogrow">
             <mat-label>Website</mat-label>
             <input matInput type="url" formControlName="website">
         </mat-form-field>
